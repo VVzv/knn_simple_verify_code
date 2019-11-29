@@ -24,7 +24,7 @@ def splitLetter(path):
     return letters
 
 def verify(path):
-    ver_knn = joblib.load('./mode_job/test1.job')
+    ver_knn = joblib.load('./models/train_01.model')
     letters = splitLetter(path)
     pre = ver_knn.predict(letters)
     code_letter = ''
