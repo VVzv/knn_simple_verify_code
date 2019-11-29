@@ -38,6 +38,6 @@ if __name__ == '__main__':
         path = sys.argv[1]
         print("验证码识别为：\033[35m%s\033[0m" %verify(path))
     except Exception as e:
-        print()
+        print('\033[31m python3 verify.py 验证码图片路径\033[0m')
         print('\033[31m ERROR: %s\033[0m' %str(e))
 
