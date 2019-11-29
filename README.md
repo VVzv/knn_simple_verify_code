@@ -9,4 +9,4 @@ verify.py：基于训练好的模型进行验证，使用方法；
 python3 verify 验证码图片路径
 ```
 验证：
-[test.jpg](https://github.com/VVzv/knn_simple_verify_code/blob/master/test.jpg)
+！[test](https://github.com/VVzv/knn_simple_verify_code/blob/master/test.jpg)
