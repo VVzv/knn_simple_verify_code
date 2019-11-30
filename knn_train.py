@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 from PIL import Image
 from sklearn.neighbors import KNeighborsClassifier
-from knn_code_verify.get_code_dict import getDataDict
+from knn_simple_verify_code.get_code_dict import getDataDict
 
 
 LETTERS = ['0', '7', 'r', 'g', '6', 'q', 'f', 'u', '3', '2', 'b', '4', 'j', '5', '1', 'x', '9', 'e', 's', 'z', 'o', 't', 'w', 'i', 'm', 'k', 'y', 'v', '8', 'p', 'n', 'c', 'd', 'l', 'a', 'h']
