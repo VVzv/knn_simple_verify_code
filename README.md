@@ -1,5 +1,11 @@
 # knn_simple_verify_code
 基于knn的简易验证码识别。
+### 环境：
+python3
+依赖库：
+```
+pip install -r requirements.txt
+```
 ## 使用方法：
 先使用img_code_dataset.py文件创建训练集；
 然后使用knn_train.py进行训练；
