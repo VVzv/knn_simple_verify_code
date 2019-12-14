@@ -11,8 +11,10 @@ from PIL import Image
 
 
 def splitLetter(path):
-    img = np.asarray(Image.open(path).convert('L'))
-    img_binary = (img > 135) * 255
+    img = Image.open(path)
+    img_size_change = img.resize((120, 48))
+    img_array = np.asarray(img_size_change.convert('L'))
+    img_binary = (img_array > 135) * 255
     img_letters = [img_binary[:, 11: 33],
                    img_binary[:, 36: 58],
                    img_binary[:, 62: 84],
