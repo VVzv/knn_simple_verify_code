@@ -9,7 +9,7 @@ import numpy as np
 from PIL import Image
 # from sklearn.externals import joblib
 
-
+# 测试数据模型需要在用一次img_code_dataset.py把测试数据进行切割，只需要修改img_code_dataset.py文件中BASE_PATH和TRAIN_BASE_PATH为测试图片位置即可
 LETTERS = ['0', '7', 'r', 'g', '6', 'q', 'f', 'u', '3', '2', 'b', '4', 'j', '5', '1', 'x', '9', 'e', 's', 'z', 'o', 't', 'w', 'i', 'm', 'k', 'y', 'v', '8', 'p', 'n', 'c', 'd', 'l', 'a', 'h']
 base_path = './test_data/'
 letters_file = os.listdir(base_path)
