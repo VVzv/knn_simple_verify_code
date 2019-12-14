@@ -13,7 +13,7 @@ pip install -r requirements.txt
 然后用knn_accuracy_rate.py检查验证识别率；
 verify.py：基于训练好的模型进行验证，使用方法；
 ```
-python3 verify 验证码图片路径
+python3 verify.py 验证码图片路径
 ```
 验证：
 ![test](https://github.com/VVzv/knn_simple_verify_code/blob/master/test.jpg)
