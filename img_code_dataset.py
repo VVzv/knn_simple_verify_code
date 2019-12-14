@@ -43,7 +43,15 @@ def letterToImg():
                     img_binary[:, 88: 110]
                     ]
         num = 0
+        # 查看加载的图像，寻找最优切割点
+        # plt.imshow(img_binary, cmap='gray')
+        # plt.show()
+        # break
         for img_letter in img_letters:
+            # 查看切割完图像的宽度是否合理
+            # print(img_letter.shape)
+            # plt.imshow(img_letter, cmap='gray')
+            # plt.show() 
             img_str = img_name.split('.')[0][num].lower()
             for letter_path in letter_to_path:
                 if img_str == letter_path.split('/')[-1]:
@@ -57,6 +65,6 @@ def letterToImg():
 
 if __name__ == '__main__':
     print('starting...')
-    letterdir()
-    letterToImg()
+    letterdir()  #创建0-z文件夹
+    letterToImg() #将切割的图像放入0-z中
 
