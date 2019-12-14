@@ -24,7 +24,7 @@ for letter_path in letters_path:
     if '.DS_Store' in letter_imgs_name:
         letter_imgs_name = letter_imgs_name[1:]
     # print(letter_imgs_name)
-    break
+    # break
 # print(letters_path)
 
 def loadDataset():
@@ -45,6 +45,8 @@ if __name__ == '__main__':
     X, y = loadDataset()
     knn = KNeighborsClassifier()
     knn.fit(X, y)
+    score = knn.score(X, y)
+    print('\033[35m训练数据精确率为：{:0.3f}%\033[0m'.format(score))
     joblib.dump(knn, './models/train_01.model')
     print('~~~OK!~~~~')
 
