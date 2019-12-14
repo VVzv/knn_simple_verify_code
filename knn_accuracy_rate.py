@@ -11,7 +11,7 @@ from PIL import Image
 
 
 LETTERS = ['0', '7', 'r', 'g', '6', 'q', 'f', 'u', '3', '2', 'b', '4', 'j', '5', '1', 'x', '9', 'e', 's', 'z', 'o', 't', 'w', 'i', 'm', 'k', 'y', 'v', '8', 'p', 'n', 'c', 'd', 'l', 'a', 'h']
-base_path = './train_data/'
+base_path = './test_data/'
 letters_file = os.listdir(base_path)
 if '.DS_Store' in letters_file:
     letters_file = letters_file[1:]
